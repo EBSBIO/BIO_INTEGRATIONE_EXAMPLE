@@ -4,4 +4,20 @@ pluginManagement {
     }
 }
 
-include("reference-receiver")
+include(":reference-receiver")
+
+include(
+    ":clients:verification",
+    ":clients:deactivation",
+    ":clients:agree",
+    ":clients:regbio"
+)
+
+include(
+    ":libs:launcher",
+    ":libs:jwt",
+    ":libs:base",
+    ":libs:configurations",
+    ":libs:cryptopro",
+    ":libs:crypto-base",
+)

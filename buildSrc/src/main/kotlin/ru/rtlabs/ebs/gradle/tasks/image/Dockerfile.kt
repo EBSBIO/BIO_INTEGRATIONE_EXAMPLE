@@ -40,6 +40,9 @@ abstract class Dockerfile : DefaultTask() {
     @get:Input
     abstract val user: Property<String>
 
+    @get:Input
+    abstract val additionalJarsPath: Property<String>
+
     @OutputFile
     val destFile: RegularFileProperty
     private val runtimeDependencies: Provider<List<String>>
@@ -113,8 +116,8 @@ abstract class Dockerfile : DefaultTask() {
     }
 
     private fun buildClasspath(): String {
-        return runtimeDependencies.get().stream().map { e: String -> binDir.get() + e }
-            .collect(Collectors.joining(":"))
+        return "${additionalJarsPath.get()}:${runtimeDependencies.get().stream().map { e: String -> binDir.get() + e }
+            .collect(Collectors.joining(":"))}"
     }
 
     private fun addRuntimeDepsSrcDir(): List<String> {

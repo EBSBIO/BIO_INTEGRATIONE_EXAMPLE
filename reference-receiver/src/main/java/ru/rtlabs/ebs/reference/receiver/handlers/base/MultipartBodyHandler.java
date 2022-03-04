@@ -40,11 +40,13 @@ public class MultipartBodyHandler implements Handler<RoutingContext> {
     List<MultipartData> fileParts = new ArrayList<>();
     routingContext.fileUploads()
                   .forEach(file -> fileParts.add(new MultipartData(file.name(),
-                                                                   Base64.getEncoder().encodeToString(
-                                                                       routingContext.vertx().fileSystem()
-                                                                                     .readFileBlocking(
-                                                                                         file.uploadedFileName())
-                                                                                     .getBytes()))));
+                                                                   Base64.getEncoder()
+                                                                         .encodeToString(
+                                                                             routingContext.vertx()
+                                                                                           .fileSystem()
+                                                                                           .readFileBlocking(
+                                                                                               file.uploadedFileName())
+                                                                                           .getBytes()))));
     if (fileParts.isEmpty()) {
       throw new BadRequestException(ErrorApiCodesEnum.NOT_FOUND_REQUIRED_DATA,
                                     Messages.NOT_FOUND_FILES.message);

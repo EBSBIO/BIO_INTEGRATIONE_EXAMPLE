@@ -1,0 +1,77 @@
+{
+  "service_type": "reg-bio",
+  "quality_id": 4,
+  "datetime_tz": 1618404859,
+  "infosystem": {
+    "system_id": "system_id",
+    "contract_id": "contract_id",
+    "ra_id": "ra_id",
+    "employee_id": "employee_id",
+    "cert_id": "cert_id"
+  },
+  "agree": {
+    "agreement_id": "agreement_id-agreeID",
+    "date_from": 1589277386,
+    "date_to": 1683868229
+  },
+  "person": {
+    "idp": "idp-idp",
+    "user_id": "user_id",
+    "contact": {
+      "phone": "+71234567890",
+      "email": "example@example.com"
+    }
+  },
+  "bio_collecting": [
+    {
+      "name": "bs1",
+      "modality": "photo",
+      "bio_sample_signature": "bio_sample_signature"
+    },
+    {
+      "name": "bs2",
+      "bio_sample_signature": "bio_sample_signature",
+      "modality": "sound",
+      "bio_metadata": {
+        "voice_1_start": "00.000",
+        "voice_1_end": "09.699",
+        "voice_1_desc": "digits_asc",
+        "voice_2_start": "10.172",
+        "voice_2_end": "18.834",
+        "voice_2_desc": "digits_asc",
+        "voice_3_start": "19.230",
+        "voice_3_end": "27.784",
+        "voice_3_desc": "digits_asc"
+      }
+    }
+  ],
+  "metrics": {
+    "total_reg_time_end": "2020-03-30T17:30:09.453+0500",
+    "new_client_time_start": "2020-03-30T17:30:09.453+0500",
+    "new_client_time_end": "2020-03-30T17:30:09.453+0500",
+    "consent_time_start": "2020-03-30T17:30:09.453+0500",
+    "consent_time_end": "2020-03-30T17:30:09.453+0500",
+    "photo_time_start_1": "2020-03-30T17:30:09.453+0500",
+    "photo_time_end_1": "2020-03-30T17:30:09.453+0500",
+    "front_bqc_estimators_photo_1": "2020-03-30T17:30:09.453+0500",
+    "sound_direct_time_start_1": "2020-03-30T17:30:09.453+0500",
+    "sound_direct_time_end_1": "2020-03-30T17:30:09.453+0500",
+    "front_bqc_estimators_sound_direct_1": "2020-03-30T17:30:09.453+0500",
+    "sound_reverse_time_start_1": "2020-03-30T17:30:09.453+0500",
+    "sound_reverse_time_end_1": "2020-03-30T17:30:09.453+0500",
+    "front_bqc_estimators_sound_reverse_1": "2020-03-30T17:30:09.453+0500",
+    "sound_random_time_start_1": "2020-03-30T17:30:09.453+0500",
+    "sound_random_time_end_1": "2020-03-30T17:30:09.453+0500",
+    "front_bqc_estimators_sound_random_1": "2020-03-30T17:30:09.453+0500",
+    "sound_all_time_end_1": "2020-03-30T17:30:09.453+0500",
+    "front_bqc_estimators_sound_all_1": "2020-03-30T17:30:09.453+0500",
+    "bank_find_profile_time_start_1": "2020-03-30T17:30:09.453+0500",
+    "bank_find_profile_time_end_1": "2020-03-30T17:30:09.453+0500",
+    "esia_find_account_msg_id": "2020-03-30T17:30:09.453+0500",
+    "esia_confirm_msg_id": "2020-03-30T17:30:09.453+0500",
+    "esia_register_by_simplified_msg_id": "2020-03-30T17:30:09.453+0500",
+    "esia_recover_msg_id": "2020-03-30T17:30:09.453+0500",
+    "name_equipment_camera": "2020-03-30T17:30:09.453+0500",
+    "name_equipment_microphone": "2020-03-30T17:30:09.453+0500"
+  }
+}

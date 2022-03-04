@@ -14,6 +14,7 @@ val startClass: String by project
 val defaultAppDir: String by project
 val defaultConfigFilePath: String by project
 val defaultLogFilePath: String by project
+val defaultAdditionalJarsPath: String? by project
 
 val dockerBuildDir = "${project.buildDir}/docker/"
 val allProjectLibsDir = "${rootProject.buildDir}/all-jars"
@@ -28,7 +29,7 @@ val createDockerfile = tasks.register<Dockerfile>("createDockerfile") {
     configFilePath.set(defaultConfigFilePath)
     logFilePath.set(defaultLogFilePath)
     binDir.set(defaultAppDir)
-
+    additionalJarsPath.set(defaultAdditionalJarsPath ?: "")
 }
 
 // копирует runtime зависимости в build/jars папку

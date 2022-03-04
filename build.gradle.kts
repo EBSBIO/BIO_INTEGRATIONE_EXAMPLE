@@ -5,7 +5,6 @@ plugins {
     `base-conventions`
     `dependency-update-check`
 }
-
 val credentials: CredentialsContainer? by project.extra
 
 val gitCommitHash = GitCommitHash(project, "").toString()
@@ -24,8 +23,6 @@ allprojects {
 
     group = findProperty("projectGroup")!!
     version = artifactVersion
-
-    tasks.withType<Jar> { duplicatesStrategy = DuplicatesStrategy.INCLUDE }
 
     repositories {
       mavenLocal()

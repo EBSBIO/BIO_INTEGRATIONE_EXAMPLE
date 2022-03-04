@@ -4,13 +4,15 @@ plugins{
 }
 
 dependencies {
+    implementation(project(":libs:launcher"))
+
     with(Deps.Logs) {
         implementation(logbackClassic)
         implementation(logbackJson)
     }
     with(Deps.Jackson) {
-        implementation(jacksonAnnotations)
         implementation(jacksonDataBind)
+        implementation(jacksonAnnotations)
     }
     with(Deps.Vertx) {
         implementation(vertxCore)
@@ -18,7 +20,6 @@ dependencies {
     }
     with(Deps.Commons) {
         implementation(cli)
-        implementation(commonsIo)
     }
 
     with(Deps.Test){

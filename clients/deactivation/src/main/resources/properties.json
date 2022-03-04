@@ -1,0 +1,32 @@
+{
+  "crypto_config": {
+    "container_type": "HDIMAGE",
+    "key_id": "TestKeyId",
+    "password": "123",
+    "algorithm": "GOST3411_2012_256withGOST3410_2012_256"
+  },
+  "base": {
+    "is_jwt_config": false,
+    "request_id": "request_id_value",
+    "host": "http://test.host"
+  },
+  "create_session_jwt": {
+    "jwt": "eyJ2ZXIiOjEsInR5cCI6IkpXVCIsInNidCI6ImFjY2VzcyIsImFsZyI6IkdPU1QzNDEwXzIwMTJfMjU2In0.eyJzdWIiOiIxMjM0IiwiaXNzIjoiaHR0cDovL3Rlc3QuaXNzIiwiY2VydF9pZCI6ImNlcnRfaWRfdmFsdWUiLCJleHAiOjE2OTQ3Mjk0MzQsImlhdCI6MTY1NDcyNTM0MiwibmJmIjoxNjU0NzI1MzQyfQ.uVLJyIFjG_sh3byZUsW1D_bbx6HwltHOuyjNvCJHzPlPJ596LsDD4XViiWxACjqGAD4e-5q5CFr3D6xw9MC6lw"
+  },
+  "create_session_jwt_data": {
+    "header": {
+      "ver": 1,
+      "typ": "JWT",
+      "sbt": "access",
+      "alg": "GOST3410_2012_256"
+    },
+    "payload": {
+      "iss": "http://test.iss",
+      "sub": "1234",
+      "cert_id": "cert_id_value",
+      "nbf": 1654725342,
+      "exp": 1694729434,
+      "iat": 1654725342
+    }
+  }
+}

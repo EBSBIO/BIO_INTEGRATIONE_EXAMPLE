@@ -189,7 +189,6 @@
         </module>
 
         <module name="NoWhitespaceBeforeCaseDefaultColon"/>
-        <module name="OverloadMethodsDeclarationOrder"/>
         <module name="VariableDeclarationUsageDistance"/>
         <module name="MethodParamPad">
             <property name="tokens"
