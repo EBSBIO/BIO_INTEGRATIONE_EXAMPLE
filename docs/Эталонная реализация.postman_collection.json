@@ -1,0 +1,777 @@
+{
+  "info": {
+    "_postman_id": "054233d6-310f-4086-9944-4a361b0f806d",
+    "name": "Эталонная реализация Copy",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "idp_notifier 200",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "sInNidCI6ImFjY2VzcyIsImFsZyI6IlJT",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n     \"user_id\": \"0000\",\n     \"stu\": \"A\"\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8092/api/idp_notifier",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8092",
+          "path": [
+            "api",
+            "idp_notifier"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "idp_notifier 401",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n     \"user_id\": \"0000\",\n     \"stu\": \"A\"\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8092/api/idp_notifier",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8092",
+          "path": [
+            "api",
+            "idp_notifier"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "idp_notifier 400",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "sInNidCI6ImFjY2VzcyIsImFsZyI6IlJT",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n     \"user_id\": \"0000\"\n     }"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8092/api/idp_notifier",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8092",
+          "path": [
+            "api",
+            "idp_notifier"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "matcher_notifier 200",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "sInNidCI6ImFjY2VzcyIsImFsZyI6IlJT",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n     \"request_id\": \"000-000-0000-00000\",\n     \"user_id\": \"0000\",\n     \"stu\": \"MA\"\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8092/api/matcher_notifier",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8092",
+          "path": [
+            "api",
+            "matcher_notifier"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "matcher_notifier 401",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n     \"request_id\": \"000-000-0000-00000\",\n     \"user_id\": \"0000\",\n     \"stu\": \"MA\"\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8092/api/matcher_notifier",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8092",
+          "path": [
+            "api",
+            "matcher_notifier"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "matcher_notifier 400",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "sInNidCI6ImFjY2VzcyIsImFsZyI6IlJT",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n     \"request_id\": \"000-000-0000-00000\",\n     \"stu\": \"MA\"\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8092/api/matcher_notifier",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8092",
+          "path": [
+            "api",
+            "matcher_notifier"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "templates/deactivation 200",
+      "request": {
+        "auth": {
+          "type": "basic"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "multipart/form-data",
+            "type": "text"
+          },
+          {
+            "key": "Cookie",
+            "value": "ebs.session=123",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "ewogICJ0eXAiOiAiSldUIiwKICAiYWxnIjogIkdPU1QzNDEwXzIwMTJfMjU2IgoKfQo.eyJzdWIiOiJzb21lX3VzZXJfNzc3IiwiYXVkIjoiVEVTVF9JRFAiLCJpYXQiOjE2NDY5ODk2MDIsImV4cCI6MzIyNTcxMjcyMDJ9Cg.MIAGCSqGSIb3DQEHAqCAMIACAQExDjAMBggqhQMHAQECAgUAMIAGCSqGSIb3DQEHAaCAJIAEgapld29nSUNKMGVYQWlPaUFpU2xkVUlpd0tJQ0FpWVd4bklqb2dJa2RQVTFRek5ERXdYekl3TVRKZk1qVTJJZ29LZlFvLmV5SnpkV0lpT2lKemIyMWxYM1Z6WlhKZk56YzNJaXdpWVhWa0lqb2lWRVZUVkY5SlJGQWlMQ0pwWVhRaU9qRTJORFk1T0RrMk1ESXNJbVY0Y0NJNk16SXlOVGN4TWpjeU1ESjlDZwAAAAAAADGCAV8wggFbAgEBMIGOMHYxCzAJBgNVBAYTAlJVMQ8wDQYDVQQIDAZSdXNzaWExDzANBgNVBAcMBk1vc2NvdzESMBAGA1UECgwJU3VwZXJQbGF0MRUwEwYDVQQLDAxTdXBlclBsYXQgQ0ExGjAYBgNVBAMMEVN1cGVyUGxhdCBDQSBSb290AhR18cxnYOmEOMC5c-zQjQprl6Pe1TAMBggqhQMHAQECAgUAoGkwGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAcBgkqhkiG9w0BCQUxDxcNMjIwMzE2MTIwNzQ0WjAvBgkqhkiG9w0BCQQxIgQgqEehJvH_aV2pR6t0sjGFHUIUs6P8wUG7zbav2emuZ5UwCgYIKoUDBwEBAwIEQIYj3wEtDz1CM7grAVOOw7_ca9mhd5IDtN_4I6YdtXLwWLLP2N6vOiYI0tMC8UQU4dUoAWQogX2WZoyKOGKtAfEAAAAAAAA"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8092/api/templates/deactivation",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8092",
+          "path": [
+            "api",
+            "templates",
+            "deactivation"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "templates/deactivation 401",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "multipart/form-data",
+            "type": "text"
+          },
+          {
+            "key": "Cookie",
+            "value": "ebs.session=123",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "ewogICJ0eXAiOiAiSldUIiwKICAiYWxnIjogIkdPU1QzNDEwXzIwMTJfMjU2IgoKfQo.eyJzdWIiOiJzb21lX3VzZXJfNzc3IiwiYXVkIjoiVEVTVF9JRFAiLCJpYXQiOjE2NDY5ODk2MDIsImV4cCI6MzIyNTcxMjcyMDJ9Cg.MIAGCSqGSIb3DQEHAqCAMIACAQExDjAMBggqhQMHAQECAgUAMIAGCSqGSIb3DQEHAaCAJIAEgapld29nSUNKMGVYQWlPaUFpU2xkVUlpd0tJQ0FpWVd4bklqb2dJa2RQVTFRek5ERXdYekl3TVRKZk1qVTJJZ29LZlFvLmV5SnpkV0lpT2lKemIyMWxYM1Z6WlhKZk56YzNJaXdpWVhWa0lqb2lWRVZUVkY5SlJGQWlMQ0pwWVhRaU9qRTJORFk1T0RrMk1ESXNJbVY0Y0NJNk16SXlOVGN4TWpjeU1ESjlDZwAAAAAAADGCAV8wggFbAgEBMIGOMHYxCzAJBgNVBAYTAlJVMQ8wDQYDVQQIDAZSdXNzaWExDzANBgNVBAcMBk1vc2NvdzESMBAGA1UECgwJU3VwZXJQbGF0MRUwEwYDVQQLDAxTdXBlclBsYXQgQ0ExGjAYBgNVBAMMEVN1cGVyUGxhdCBDQSBSb290AhR18cxnYOmEOMC5c-zQjQprl6Pe1TAMBggqhQMHAQECAgUAoGkwGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAcBgkqhkiG9w0BCQUxDxcNMjIwMzE2MTIwNzQ0WjAvBgkqhkiG9w0BCQQxIgQgqEehJvH_aV2pR6t0sjGFHUIUs6P8wUG7zbav2emuZ5UwCgYIKoUDBwEBAwIEQIYj3wEtDz1CM7grAVOOw7_ca9mhd5IDtN_4I6YdtXLwWLLP2N6vOiYI0tMC8UQU4dUoAWQogX2WZoyKOGKtAfEAAAAAAAA"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8092/api/templates/deactivation",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8092",
+          "path": [
+            "api",
+            "templates",
+            "deactivation"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "templates/deactivation 400 cookie",
+      "request": {
+        "auth": {
+          "type": "basic"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "multipart/form-data",
+            "type": "text"
+          },
+          {
+            "key": "Cookie",
+            "value": "ebs.session=123",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "ewogICJ0eXAiOiAiSldUIiwKICAiYWxnIjogIkdPU1QzNDEwXzIwMTJfMjU2IgoKfQo.eyJzdWIiOiJzb21lX3VzZXJfNzc3IiwiYXVkIjoiVEVTVF9JRFAiLCJpYXQiOjE2NDY5ODk2MDIsImV4cCI6MzIyNTcxMjcyMDJ9Cg.MIAGCSqGSIb3DQEHAqCAMIACAQExDjAMBggqhQMHAQECAgUAMIAGCSqGSIb3DQEHAaCAJIAEgapld29nSUNKMGVYQWlPaUFpU2xkVUlpd0tJQ0FpWVd4bklqb2dJa2RQVTFRek5ERXdYekl3TVRKZk1qVTJJZ29LZlFvLmV5SnpkV0lpT2lKemIyMWxYM1Z6WlhKZk56YzNJaXdpWVhWa0lqb2lWRVZUVkY5SlJGQWlMQ0pwWVhRaU9qRTJORFk1T0RrMk1ESXNJbVY0Y0NJNk16SXlOVGN4TWpjeU1ESjlDZwAAAAAAADGCAV8wggFbAgEBMIGOMHYxCzAJBgNVBAYTAlJVMQ8wDQYDVQQIDAZSdXNzaWExDzANBgNVBAcMBk1vc2NvdzESMBAGA1UECgwJU3VwZXJQbGF0MRUwEwYDVQQLDAxTdXBlclBsYXQgQ0ExGjAYBgNVBAMMEVN1cGVyUGxhdCBDQSBSb290AhR18cxnYOmEOMC5c-zQjQprl6Pe1TAMBggqhQMHAQECAgUAoGkwGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAcBgkqhkiG9w0BCQUxDxcNMjIwMzE2MTIwNzQ0WjAvBgkqhkiG9w0BCQQxIgQgqEehJvH_aV2pR6t0sjGFHUIUs6P8wUG7zbav2emuZ5UwCgYIKoUDBwEBAwIEQIYj3wEtDz1CM7grAVOOw7_ca9mhd5IDtN_4I6YdtXLwWLLP2N6vOiYI0tMC8UQU4dUoAWQogX2WZoyKOGKtAfEAAAAAAAA"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8092/api/templates/deactivation",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8092",
+          "path": [
+            "api",
+            "templates",
+            "deactivation"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "templates/deactivation 400 jwt",
+      "request": {
+        "auth": {
+          "type": "basic"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "multipart/form-data",
+            "type": "text"
+          },
+          {
+            "key": "Cookie",
+            "value": "ebs.session=123",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.r96aRKdLO4DC1qBCjJxl0I6F9yrL9azi8rPHeKrV95mq79xx0qEyEjzg35cxE_HFbylQPsG0-J0u88VkrpeyTEuunN7Fq3uocfYPO84F1hZS-gdVh8Bb7MqVzJ67p_ajuDpNiiCyNDwp7eWVoRPhcyGbBqgsef_s8o0uJk3NucIeiCfAzLn6DsGiDPm6Siy0vWs8xgYVHYR8nE1OwmrNP9NW1uIUJpXl1e1EhQC_LDReZUiufxyi3r1qIzPyQ10ManGVPB8JijsUvUojm_oXK-tjC8X4v4CfYqAqvJJBOI8UZrrmiy8SnEIyoAlguoqw8P7hDJrlL6gtRp58pe4V7g"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8092/api/templates/deactivation",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8092",
+          "path": [
+            "api",
+            "templates",
+            "deactivation"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "templates/upload 200",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "sInNidCI6ImFjY2VzcyIsImFsZyI6IlJT",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+            "key": "Content-Type",
+            "value": "multipart/form-data",
+            "type": "text"
+          },
+          {
+            "key": "Cookie",
+            "value": "ebs.session=123",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "params",
+              "value": "ewogICJ2ZXIiOiAxLAogICJ0eXAiOiAiSldUIiwKICAiYWxnIjogIkdPU1QzNDEwXzIwMTJfMjU2IgoKfQo.eyJzdWIiOiJzb21lX3VzZXJfNzc3IiwiYXVkIjoiVEVTVF9JRFAiLCJ2ZWN0b3JzIjpbeyJ2ZW5kb3IiOiJzdHViX3Bob3RvXzEuMC4wIiwibW9kYWxpdHkiOiJwaG90byIsInNpZ25hdHVyZSI6eyJkYXRhIjoiUEhvVEhIV250SkNIbDdCNXI2UnE3cXpPVWo5empnN3FRMXhKYjN4QXRaYUc2THRMWXhpRzFXd2x2TVJpMElJaWlQUVdRMG9XelVDK0dXZWRiU2NiSWc9PSIsImFsZyI6IkdPU1QzNDExXzIwMTJfMjU2d2l0aEdPU1QzNDEwXzIwMTJfMjU2IiwidHlwZSI6IlBMQUlOIiwia2V5SWQiOiJpbW1vcnRhbC1zZWZzaWduZWQtR29zdDIwMTIta2V5In19XSwiaWF0IjoxNjQ2OTg5NjAyLCJleHAiOjMyMjU3MTI3MjAyfQo.MIAGCSqGSIb3DQEHAqCAMIACAQExDjAMBggqhQMHAQECAgUAMIAGCSqGSIb3DQEHAaCAJIAEggIrZXdvZ0lDSjJaWElpT2lBeExBb2dJQ0owZVhBaU9pQWlTbGRVSWl3S0lDQWlZV3huSWpvZ0lrZFBVMVF6TkRFd1h6SXdNVEpmTWpVMklnb0tmUW8uZXlKemRXSWlPaUp6YjIxbFgzVnpaWEpmTnpjM0lpd2lZWFZrSWpvaVZFVlRWRjlKUkZBaUxDSjJaV04wYjNKeklqcGJleUoyWlc1a2IzSWlPaUp6ZEhWaVgzQm9iM1J2WHpFdU1DNHdJaXdpYlc5a1lXeHBkSGtpT2lKd2FHOTBieUlzSW5OcFoyNWhkSFZ5WlNJNmV5SmtZWFJoSWpvaVVFaHZWRWhJVjI1MFNrTkliRGRDTlhJMlVuRTNjWHBQVldvNWVtcG5OM0ZSTVhoS1lqTjRRWFJhWVVjMlRIUk1XWGhwUnpGWGQyeDJUVkpwTUVsSmFXbFFVVmRSTUc5WGVsVkRLMGRYWldSaVUyTmlTV2M5UFNJc0ltRnNaeUk2SWtkUFUxUXpOREV4WHpJd01USmZNalUyZDJsMGFFZFBVMVF6TkRFd1h6SXdNVEpmTWpVMklpd2lkSGx3WlNJNklsQk1RVWxPSWl3aWEyVjVTV1FpT2lKcGJXMXZjblJoYkMxelpXWnphV2R1WldRdFIyOXpkREl3TVRJdGEyVjVJbjE5WFN3aWFXRjBJam94TmpRMk9UZzVOakF5TENKbGVIQWlPak15TWpVM01USTNNakF5ZlFvAAAAAAAAMYIBXzCCAVsCAQEwgY4wdjELMAkGA1UEBhMCUlUxDzANBgNVBAgMBlJ1c3NpYTEPMA0GA1UEBwwGTW9zY293MRIwEAYDVQQKDAlTdXBlclBsYXQxFTATBgNVBAsMDFN1cGVyUGxhdCBDQTEaMBgGA1UEAwwRU3VwZXJQbGF0IENBIFJvb3QCFHXxzGdg6YQ4wLlz7NCNCmuXo97VMAwGCCqFAwcBAQICBQCgaTAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0yMjAzMTEwOTIyMjNaMC8GCSqGSIb3DQEJBDEiBCAVXDXodopOu-2AzbTDRPkhkN7A5uJuAW8JOxkQplstXDAKBggqhQMHAQEDAgRAJfOT_THXXgJMtulJs6okRxicFT9EZfmcNurN4yU49lO2Tqvo-u0IsZP5m7wh0KDGbu-fnE9VAtg-YU27tNv9dAAAAAAAAA",
+              "type": "text"
+            },
+            {
+              "key": "stub_photo_1.0.0",
+              "value": "c29tZSB0ZW1wbGF0ZSBkYXRhOzQ5LjMzMjQ4NywgMTcuNjExNTI1Owo=",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8092/api/templates/upload",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8092",
+          "path": [
+            "api",
+            "templates",
+            "upload"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "templates/upload 401",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+            "key": "Content-Type",
+            "value": "multipart/form-data",
+            "type": "text"
+          },
+          {
+            "key": "Cookie",
+            "value": "ebs.session=123",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "params",
+              "value": "ewogICJ2ZXIiOiAxLAogICJ0eXAiOiAiSldUIiwKICAiYWxnIjogIkdPU1QzNDEwXzIwMTJfMjU2IgoKfQo.eyJzdWIiOiJzb21lX3VzZXJfNzc3IiwiYXVkIjoiVEVTVF9JRFAiLCJ2ZWN0b3JzIjpbeyJ2ZW5kb3IiOiJzdHViX3Bob3RvXzEuMC4wIiwibW9kYWxpdHkiOiJwaG90byIsInNpZ25hdHVyZSI6eyJkYXRhIjoiUEhvVEhIV250SkNIbDdCNXI2UnE3cXpPVWo5empnN3FRMXhKYjN4QXRaYUc2THRMWXhpRzFXd2x2TVJpMElJaWlQUVdRMG9XelVDK0dXZWRiU2NiSWc9PSIsImFsZyI6IkdPU1QzNDExXzIwMTJfMjU2d2l0aEdPU1QzNDEwXzIwMTJfMjU2IiwidHlwZSI6IlBMQUlOIiwia2V5SWQiOiJpbW1vcnRhbC1zZWZzaWduZWQtR29zdDIwMTIta2V5In19XSwiaWF0IjoxNjQ2OTg5NjAyLCJleHAiOjMyMjU3MTI3MjAyfQo.MIAGCSqGSIb3DQEHAqCAMIACAQExDjAMBggqhQMHAQECAgUAMIAGCSqGSIb3DQEHAaCAJIAEggIrZXdvZ0lDSjJaWElpT2lBeExBb2dJQ0owZVhBaU9pQWlTbGRVSWl3S0lDQWlZV3huSWpvZ0lrZFBVMVF6TkRFd1h6SXdNVEpmTWpVMklnb0tmUW8uZXlKemRXSWlPaUp6YjIxbFgzVnpaWEpmTnpjM0lpd2lZWFZrSWpvaVZFVlRWRjlKUkZBaUxDSjJaV04wYjNKeklqcGJleUoyWlc1a2IzSWlPaUp6ZEhWaVgzQm9iM1J2WHpFdU1DNHdJaXdpYlc5a1lXeHBkSGtpT2lKd2FHOTBieUlzSW5OcFoyNWhkSFZ5WlNJNmV5SmtZWFJoSWpvaVVFaHZWRWhJVjI1MFNrTkliRGRDTlhJMlVuRTNjWHBQVldvNWVtcG5OM0ZSTVhoS1lqTjRRWFJhWVVjMlRIUk1XWGhwUnpGWGQyeDJUVkpwTUVsSmFXbFFVVmRSTUc5WGVsVkRLMGRYWldSaVUyTmlTV2M5UFNJc0ltRnNaeUk2SWtkUFUxUXpOREV4WHpJd01USmZNalUyZDJsMGFFZFBVMVF6TkRFd1h6SXdNVEpmTWpVMklpd2lkSGx3WlNJNklsQk1RVWxPSWl3aWEyVjVTV1FpT2lKcGJXMXZjblJoYkMxelpXWnphV2R1WldRdFIyOXpkREl3TVRJdGEyVjVJbjE5WFN3aWFXRjBJam94TmpRMk9UZzVOakF5TENKbGVIQWlPak15TWpVM01USTNNakF5ZlFvAAAAAAAAMYIBXzCCAVsCAQEwgY4wdjELMAkGA1UEBhMCUlUxDzANBgNVBAgMBlJ1c3NpYTEPMA0GA1UEBwwGTW9zY293MRIwEAYDVQQKDAlTdXBlclBsYXQxFTATBgNVBAsMDFN1cGVyUGxhdCBDQTEaMBgGA1UEAwwRU3VwZXJQbGF0IENBIFJvb3QCFHXxzGdg6YQ4wLlz7NCNCmuXo97VMAwGCCqFAwcBAQICBQCgaTAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0yMjAzMTEwOTIyMjNaMC8GCSqGSIb3DQEJBDEiBCAVXDXodopOu-2AzbTDRPkhkN7A5uJuAW8JOxkQplstXDAKBggqhQMHAQEDAgRAJfOT_THXXgJMtulJs6okRxicFT9EZfmcNurN4yU49lO2Tqvo-u0IsZP5m7wh0KDGbu-fnE9VAtg-YU27tNv9dAAAAAAAAA",
+              "type": "text"
+            },
+            {
+              "key": "stub_photo_1.0.0",
+              "value": "c29tZSB0ZW1wbGF0ZSBkYXRhOzQ5LjMzMjQ4NywgMTcuNjExNTI1Owo=",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8092/api/templates/upload",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8092",
+          "path": [
+            "api",
+            "templates",
+            "upload"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "templates/upload 400 cookie",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "sInNidCI6ImFjY2VzcyIsImFsZyI6IlJT",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+            "key": "Content-Type",
+            "value": "multipart/form-data",
+            "type": "text"
+          },
+          {
+            "key": "Cookie",
+            "value": "ebs.session=123",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "params",
+              "value": "ewogICJ2ZXIiOiAxLAogICJ0eXAiOiAiSldUIiwKICAiYWxnIjogIkdPU1QzNDEwXzIwMTJfMjU2IgoKfQo.eyJzdWIiOiJzb21lX3VzZXJfNzc3IiwiYXVkIjoiVEVTVF9JRFAiLCJ2ZWN0b3JzIjpbeyJ2ZW5kb3IiOiJzdHViX3Bob3RvXzEuMC4wIiwibW9kYWxpdHkiOiJwaG90byIsInNpZ25hdHVyZSI6eyJkYXRhIjoiUEhvVEhIV250SkNIbDdCNXI2UnE3cXpPVWo5empnN3FRMXhKYjN4QXRaYUc2THRMWXhpRzFXd2x2TVJpMElJaWlQUVdRMG9XelVDK0dXZWRiU2NiSWc9PSIsImFsZyI6IkdPU1QzNDExXzIwMTJfMjU2d2l0aEdPU1QzNDEwXzIwMTJfMjU2IiwidHlwZSI6IlBMQUlOIiwia2V5SWQiOiJpbW1vcnRhbC1zZWZzaWduZWQtR29zdDIwMTIta2V5In19XSwiaWF0IjoxNjQ2OTg5NjAyLCJleHAiOjMyMjU3MTI3MjAyfQo.MIAGCSqGSIb3DQEHAqCAMIACAQExDjAMBggqhQMHAQECAgUAMIAGCSqGSIb3DQEHAaCAJIAEggIrZXdvZ0lDSjJaWElpT2lBeExBb2dJQ0owZVhBaU9pQWlTbGRVSWl3S0lDQWlZV3huSWpvZ0lrZFBVMVF6TkRFd1h6SXdNVEpmTWpVMklnb0tmUW8uZXlKemRXSWlPaUp6YjIxbFgzVnpaWEpmTnpjM0lpd2lZWFZrSWpvaVZFVlRWRjlKUkZBaUxDSjJaV04wYjNKeklqcGJleUoyWlc1a2IzSWlPaUp6ZEhWaVgzQm9iM1J2WHpFdU1DNHdJaXdpYlc5a1lXeHBkSGtpT2lKd2FHOTBieUlzSW5OcFoyNWhkSFZ5WlNJNmV5SmtZWFJoSWpvaVVFaHZWRWhJVjI1MFNrTkliRGRDTlhJMlVuRTNjWHBQVldvNWVtcG5OM0ZSTVhoS1lqTjRRWFJhWVVjMlRIUk1XWGhwUnpGWGQyeDJUVkpwTUVsSmFXbFFVVmRSTUc5WGVsVkRLMGRYWldSaVUyTmlTV2M5UFNJc0ltRnNaeUk2SWtkUFUxUXpOREV4WHpJd01USmZNalUyZDJsMGFFZFBVMVF6TkRFd1h6SXdNVEpmTWpVMklpd2lkSGx3WlNJNklsQk1RVWxPSWl3aWEyVjVTV1FpT2lKcGJXMXZjblJoYkMxelpXWnphV2R1WldRdFIyOXpkREl3TVRJdGEyVjVJbjE5WFN3aWFXRjBJam94TmpRMk9UZzVOakF5TENKbGVIQWlPak15TWpVM01USTNNakF5ZlFvAAAAAAAAMYIBXzCCAVsCAQEwgY4wdjELMAkGA1UEBhMCUlUxDzANBgNVBAgMBlJ1c3NpYTEPMA0GA1UEBwwGTW9zY293MRIwEAYDVQQKDAlTdXBlclBsYXQxFTATBgNVBAsMDFN1cGVyUGxhdCBDQTEaMBgGA1UEAwwRU3VwZXJQbGF0IENBIFJvb3QCFHXxzGdg6YQ4wLlz7NCNCmuXo97VMAwGCCqFAwcBAQICBQCgaTAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0yMjAzMTEwOTIyMjNaMC8GCSqGSIb3DQEJBDEiBCAVXDXodopOu-2AzbTDRPkhkN7A5uJuAW8JOxkQplstXDAKBggqhQMHAQEDAgRAJfOT_THXXgJMtulJs6okRxicFT9EZfmcNurN4yU49lO2Tqvo-u0IsZP5m7wh0KDGbu-fnE9VAtg-YU27tNv9dAAAAAAAAA",
+              "type": "text"
+            },
+            {
+              "key": "stub_photo_1.0.0",
+              "value": "c29tZSB0ZW1wbGF0ZSBkYXRhOzQ5LjMzMjQ4NywgMTcuNjExNTI1Owo=",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8092/api/templates/upload",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8092",
+          "path": [
+            "api",
+            "templates",
+            "upload"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "templates/upload 400 jwt",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "sInNidCI6ImFjY2VzcyIsImFsZyI6IlJT",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+            "key": "Content-Type",
+            "value": "multipart/form-data",
+            "type": "text"
+          },
+          {
+            "key": "Cookie",
+            "value": "ebs.session=123",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "params",
+              "value": "eyJzdWIiOiJleHRJRDEiLCJhdWQiOiJjb2ZmZWViZWFuIiwidmVjdG9ycyI6W3sidmVuZG9yIjoiSVZBQ1ZfcGhvdG9fMS4yLjEiLCJtb2RhbGl0eSI6InBob3RvIiwic2lnbmF0dXJlIjp7ImRhdGEiOiJYanI3K0VXN1FjN2d4Qldsb0gxUlZIczVpbVRPYkN4WitJQzV3OXBvRUg2SUNINmJvQnZnejVhVFNxcFhvTVF0TG1lbUxlUXFjOHFUMGdseWZwTThrQW89IiwiYWxnIjoiR09TVDM0MTFfMjAxMl8yNTZ3aXRoR09TVDM0MTBfMjAxMl8yNTYiLCJ0eXBlIjoiUExBSU4iLCJrZXlJZCI6IjU2ZWJiYjdmLWQ2N2EtNDI0ZC04YzUyLTQxNjY0Y2U4NzJkZSJ9fV0sImlhdCI6MTY0Mzg3MjIwNiwiZXhwIjoxNjQ0MzMzOTA1fQ.uhG4S4Hiiw7vfujQ8RS1NtG9twQkF-qwqC4Y8wuSQV-lCGrt5vv7YJijXGUWvkgPtSmOcBlpXtu0fMXvkwfXE71MJQmze60tQi9SJc50r7tbMQIeYpxYjAS76MgK7npLnHt24KIn1l28XexDPrzgsYqKBFNjyf-03Pg8KmBDk-v8wuO0auWOrev3La19RQOPT3rz1-jOZiOnpJQuqe2XPbYEmFq55CKeXGY5hU2exhGWbP9ZLgVb5IzAMY245i9Y8HW5VRHs-Vvk0CFRU5BtlsYGbm2RTYPTTytLlPO_UabllJuqf1hXA6DRQ0W31q0Z46RQCqs-QF0x6kAsIZ27nw",
+              "type": "text"
+            },
+            {
+              "key": "stub_photo_1.0.0",
+              "value": "c29tZSB0ZW1wbGF0ZSBkYXRhOzQ5LjMzMjQ4NywgMTcuNjExNTI1Owo=",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8092/api/templates/upload",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8092",
+          "path": [
+            "api",
+            "templates",
+            "upload"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "templates/upload 400 without vectors",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "sInNidCI6ImFjY2VzcyIsImFsZyI6IlJT",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+            "key": "Content-Type",
+            "value": "multipart/form-data",
+            "type": "text"
+          },
+          {
+            "key": "Cookie",
+            "value": "ebs.session=123",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "params",
+              "value": "ewogICJ2ZXIiOiAxLAogICJ0eXAiOiAiSldUIiwKICAiYWxnIjogIkdPU1QzNDEwXzIwMTJfMjU2IgoKfQo.eyJzdWIiOiJzb21lX3VzZXJfNzc3IiwiYXVkIjoiVEVTVF9JRFAiLCJ2ZWN0b3JzIjpbeyJ2ZW5kb3IiOiJzdHViX3Bob3RvXzEuMC4wIiwibW9kYWxpdHkiOiJwaG90byIsInNpZ25hdHVyZSI6eyJkYXRhIjoiUEhvVEhIV250SkNIbDdCNXI2UnE3cXpPVWo5empnN3FRMXhKYjN4QXRaYUc2THRMWXhpRzFXd2x2TVJpMElJaWlQUVdRMG9XelVDK0dXZWRiU2NiSWc9PSIsImFsZyI6IkdPU1QzNDExXzIwMTJfMjU2d2l0aEdPU1QzNDEwXzIwMTJfMjU2IiwidHlwZSI6IlBMQUlOIiwia2V5SWQiOiJpbW1vcnRhbC1zZWZzaWduZWQtR29zdDIwMTIta2V5In19XSwiaWF0IjoxNjQ2OTg5NjAyLCJleHAiOjMyMjU3MTI3MjAyfQo.MIAGCSqGSIb3DQEHAqCAMIACAQExDjAMBggqhQMHAQECAgUAMIAGCSqGSIb3DQEHAaCAJIAEggIrZXdvZ0lDSjJaWElpT2lBeExBb2dJQ0owZVhBaU9pQWlTbGRVSWl3S0lDQWlZV3huSWpvZ0lrZFBVMVF6TkRFd1h6SXdNVEpmTWpVMklnb0tmUW8uZXlKemRXSWlPaUp6YjIxbFgzVnpaWEpmTnpjM0lpd2lZWFZrSWpvaVZFVlRWRjlKUkZBaUxDSjJaV04wYjNKeklqcGJleUoyWlc1a2IzSWlPaUp6ZEhWaVgzQm9iM1J2WHpFdU1DNHdJaXdpYlc5a1lXeHBkSGtpT2lKd2FHOTBieUlzSW5OcFoyNWhkSFZ5WlNJNmV5SmtZWFJoSWpvaVVFaHZWRWhJVjI1MFNrTkliRGRDTlhJMlVuRTNjWHBQVldvNWVtcG5OM0ZSTVhoS1lqTjRRWFJhWVVjMlRIUk1XWGhwUnpGWGQyeDJUVkpwTUVsSmFXbFFVVmRSTUc5WGVsVkRLMGRYWldSaVUyTmlTV2M5UFNJc0ltRnNaeUk2SWtkUFUxUXpOREV4WHpJd01USmZNalUyZDJsMGFFZFBVMVF6TkRFd1h6SXdNVEpmTWpVMklpd2lkSGx3WlNJNklsQk1RVWxPSWl3aWEyVjVTV1FpT2lKcGJXMXZjblJoYkMxelpXWnphV2R1WldRdFIyOXpkREl3TVRJdGEyVjVJbjE5WFN3aWFXRjBJam94TmpRMk9UZzVOakF5TENKbGVIQWlPak15TWpVM01USTNNakF5ZlFvAAAAAAAAMYIBXzCCAVsCAQEwgY4wdjELMAkGA1UEBhMCUlUxDzANBgNVBAgMBlJ1c3NpYTEPMA0GA1UEBwwGTW9zY293MRIwEAYDVQQKDAlTdXBlclBsYXQxFTATBgNVBAsMDFN1cGVyUGxhdCBDQTEaMBgGA1UEAwwRU3VwZXJQbGF0IENBIFJvb3QCFHXxzGdg6YQ4wLlz7NCNCmuXo97VMAwGCCqFAwcBAQICBQCgaTAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0yMjAzMTEwOTIyMjNaMC8GCSqGSIb3DQEJBDEiBCAVXDXodopOu-2AzbTDRPkhkN7A5uJuAW8JOxkQplstXDAKBggqhQMHAQEDAgRAJfOT_THXXgJMtulJs6okRxicFT9EZfmcNurN4yU49lO2Tqvo-u0IsZP5m7wh0KDGbu-fnE9VAtg-YU27tNv9dAAAAAAAAA",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8092/api/templates/upload",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8092",
+          "path": [
+            "api",
+            "templates",
+            "upload"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "templates/upload 400 vectors",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "sInNidCI6ImFjY2VzcyIsImFsZyI6IlJT",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+            "key": "Content-Type",
+            "value": "multipart/form-data",
+            "type": "text"
+          },
+          {
+            "key": "Cookie",
+            "value": "ebs.session=123",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "params",
+              "value": "ewogICJ2ZXIiOiAxLAogICJ0eXAiOiAiSldUIiwKICAiYWxnIjogIkdPU1QzNDEwXzIwMTJfMjU2IgoKfQo.eyJzdWIiOiJzb21lX3VzZXJfNzc3IiwiYXVkIjoiVEVTVF9JRFAiLCJ2ZWN0b3JzIjpbeyJ2ZW5kb3IiOiJzdHViX3Bob3RvXzEuMC4wIiwibW9kYWxpdHkiOiJwaG90byIsInNpZ25hdHVyZSI6eyJkYXRhIjoiUEhvVEhIV250SkNIbDdCNXI2UnE3cXpPVWo5empnN3FRMXhKYjN4QXRaYUc2THRMWXhpRzFXd2x2TVJpMElJaWlQUVdRMG9XelVDK0dXZWRiU2NiSWc9PSIsImFsZyI6IkdPU1QzNDExXzIwMTJfMjU2d2l0aEdPU1QzNDEwXzIwMTJfMjU2IiwidHlwZSI6IlBMQUlOIiwia2V5SWQiOiJpbW1vcnRhbC1zZWZzaWduZWQtR29zdDIwMTIta2V5In19XSwiaWF0IjoxNjQ2OTg5NjAyLCJleHAiOjMyMjU3MTI3MjAyfQo.MIAGCSqGSIb3DQEHAqCAMIACAQExDjAMBggqhQMHAQECAgUAMIAGCSqGSIb3DQEHAaCAJIAEggIrZXdvZ0lDSjJaWElpT2lBeExBb2dJQ0owZVhBaU9pQWlTbGRVSWl3S0lDQWlZV3huSWpvZ0lrZFBVMVF6TkRFd1h6SXdNVEpmTWpVMklnb0tmUW8uZXlKemRXSWlPaUp6YjIxbFgzVnpaWEpmTnpjM0lpd2lZWFZrSWpvaVZFVlRWRjlKUkZBaUxDSjJaV04wYjNKeklqcGJleUoyWlc1a2IzSWlPaUp6ZEhWaVgzQm9iM1J2WHpFdU1DNHdJaXdpYlc5a1lXeHBkSGtpT2lKd2FHOTBieUlzSW5OcFoyNWhkSFZ5WlNJNmV5SmtZWFJoSWpvaVVFaHZWRWhJVjI1MFNrTkliRGRDTlhJMlVuRTNjWHBQVldvNWVtcG5OM0ZSTVhoS1lqTjRRWFJhWVVjMlRIUk1XWGhwUnpGWGQyeDJUVkpwTUVsSmFXbFFVVmRSTUc5WGVsVkRLMGRYWldSaVUyTmlTV2M5UFNJc0ltRnNaeUk2SWtkUFUxUXpOREV4WHpJd01USmZNalUyZDJsMGFFZFBVMVF6TkRFd1h6SXdNVEpmTWpVMklpd2lkSGx3WlNJNklsQk1RVWxPSWl3aWEyVjVTV1FpT2lKcGJXMXZjblJoYkMxelpXWnphV2R1WldRdFIyOXpkREl3TVRJdGEyVjVJbjE5WFN3aWFXRjBJam94TmpRMk9UZzVOakF5TENKbGVIQWlPak15TWpVM01USTNNakF5ZlFvAAAAAAAAMYIBXzCCAVsCAQEwgY4wdjELMAkGA1UEBhMCUlUxDzANBgNVBAgMBlJ1c3NpYTEPMA0GA1UEBwwGTW9zY293MRIwEAYDVQQKDAlTdXBlclBsYXQxFTATBgNVBAsMDFN1cGVyUGxhdCBDQTEaMBgGA1UEAwwRU3VwZXJQbGF0IENBIFJvb3QCFHXxzGdg6YQ4wLlz7NCNCmuXo97VMAwGCCqFAwcBAQICBQCgaTAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0yMjAzMTEwOTIyMjNaMC8GCSqGSIb3DQEJBDEiBCAVXDXodopOu-2AzbTDRPkhkN7A5uJuAW8JOxkQplstXDAKBggqhQMHAQEDAgRAJfOT_THXXgJMtulJs6okRxicFT9EZfmcNurN4yU49lO2Tqvo-u0IsZP5m7wh0KDGbu-fnE9VAtg-YU27tNv9dAAAAAAAAA",
+              "type": "text"
+            },
+            {
+              "key": "NoName",
+              "value": "c29tZSB0ZW1wbGF0ZSBkYXRhOzQ5LjMzMjQ4NywgMTcuNjExNTI1Owo=",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8092/api/templates/upload",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8092",
+          "path": [
+            "api",
+            "templates",
+            "upload"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
