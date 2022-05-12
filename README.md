@@ -211,7 +211,7 @@ Cookie содержит идентификатор запроса (транза�
 POST /api/v1/in Cookie: ebs.session=5fc03087-d265-11e7-b8c6-83e29cd24f4c Authorization: Bearer U29tZUJpb1NrdWRUb2tlbgo=
 Content-Type: multipart/form-data; boundary=f3URHA_Xnhk0D8gW1iCGLPQk9_gjZr_ywsH Content-Length: {длина тела сообщения}
 
---f3URHA_Xnhk0D8gW1iCGLPQk9_gjZr_ywsH Content-Disposition: form-data; name="stub_photo_1.0.0"
+--f3URHA_Xnhk0D8gW1iCGLPQk9_gjZr_ywsH Content-Disposition: form-data; name="stub_photo_1.0.0"; filename="stub_photo_1.0.0"
 Content-Type: application/octet-stream
 
 {Поток байт биометрического шаблона. base64 представление:
