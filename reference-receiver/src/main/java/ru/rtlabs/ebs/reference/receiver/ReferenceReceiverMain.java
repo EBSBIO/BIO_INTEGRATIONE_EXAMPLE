@@ -8,11 +8,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import ru.rtlabs.ebs.reference.receiver.config.ReferenceReceiverConfig;
 import ru.rtlabs.ebs.reference.receiver.exception.ServerServiceException;
+import ru.rtlabs.ebs.reference.receiver.launcher.utils.Arguments;
+import ru.rtlabs.ebs.reference.receiver.launcher.utils.ConfigParser;
+import ru.rtlabs.ebs.reference.receiver.launcher.utils.LoggerConfig;
+import ru.rtlabs.ebs.reference.receiver.launcher.utils.Utils;
 import ru.rtlabs.ebs.reference.receiver.logging.Messages;
-import ru.rtlabs.ebs.reference.receiver.service.utils.Arguments;
-import ru.rtlabs.ebs.reference.receiver.utils.ConfigParser;
-import ru.rtlabs.ebs.reference.receiver.utils.LoggerConfig;
-import ru.rtlabs.ebs.reference.receiver.utils.Utils;
 import ru.rtlabs.ebs.reference.receiver.verticles.HttpVerticle;
 
 public class ReferenceReceiverMain {

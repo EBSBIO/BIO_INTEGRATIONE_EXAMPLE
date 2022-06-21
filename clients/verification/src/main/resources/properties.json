@@ -1,0 +1,62 @@
+{
+  "crypto_config": {
+    "container_type": "HDIMAGE",
+    "key_id": "key_id_value",
+    "password": "password_value",
+    "algorithm": "GOST3411_2012_256withGOST3410_2012_256"
+  },
+  "ebs_config": {
+    "host": "http://ebs.rtlabs.ru",
+    "create_session_url": "/api/v3/verifications",
+    "get_instructions_url": "/api/v1/verifications/%s/negotiate",
+    "upload_url": "/api/v3/verifications/%s/upload",
+    "result_url": "/api/v3/verifications/%s/result",
+    "create_session": {
+      "metadata": "{\"bio_collecting_type\": \"face_only\",\"metadata\":{\"camera_id\":\"2\",\"screen\":\"1200;1920\",\"device_number\":\"0819da27\",\"date\":\"1520467814933\"}}",
+      "create_session_jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJHT1NUMzQxMF8yMDEyXzI1NiJ9.eyJsYXQiOjE1OTUyNDk2NDQsInN1YiI6InN1Yl92YWx1ZSIsImV4cCI6MTY5MDk0NjEyNCwibmJmIjoxNTk1MjQ5NjQ1LCJpc3MiOiJodHRwOi8vc3R1Yi5lYnMuaXNzIiwiY2xpZW50X2lkIjoiY2xpZW50X2lkX3ZhbHVlIn0.Vy7NFOflOj-Qt1WS-C6tm8jA-bgNAJMaaD395qimOfbNIJTMja_07afRiHMR64PgwLpPMgPKHK3PqotLsTpMpw",
+      "create_session_jwt_data": {
+        "header": {
+          "typ": "JWT",
+          "alg": "GOST3410_2012_256"
+        },
+        "payload": {
+          "iss": "http://stub.ebs.iss",
+          "sub": "sub_value",
+          "client_id": "client_id_value",
+          "nbf": 1595249645,
+          "iat": 1595249644,
+          "exp": 1690946124
+        }
+      }
+    },
+    "get_instructions": {
+      "metadata": "{\"metadata\":{\"camera_id\":\"2\",\"screen\":\"1200;1920\",\"device_number\":\"0819da27\",\"date\":\"1520467814933\"}}"
+    },
+    "upload": {
+      "metadata": "{\"camera_id\":\"2\",\"screen\":\"1200;1920\",\"device_number\":\"0819da27\",\"date\":\"1520467814933\"}",
+      "photo_data": {
+        "path": "/tmp/reference-receiver/clients/verification/src/main/resources/test_photo.jpeg",
+        "content_type": "image/jpeg",
+        "file_name": "something_photo"
+      }
+    },
+    "result": {
+      "result_jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJHT1NUMzQxMF8yMDEyXzI1NiJ9.eyJsYXQiOjE1OTUyNDk2NDQsInN1YiI6InN1Yl92YWx1ZSIsImV4cCI6MTY5MDk0NjEyNCwibmJmIjoxNTk1MjQ5NjQ1LCJpc3MiOiJodHRwOi8vc3R1Yi5lYnMuaXNzIiwiY2xpZW50X2lkIjoiY2xpZW50X2lkX3ZhbHVlIiwidmVyaWZ5X3Rva2VuIjoidmVyaWZ5X3Rva2VuX3ZhbHVlIn0.Vy7NFOflOj-Qt1WS-C6tm8jA-bgNAJMaaD395qimOfbNIJTMja_07afRiHMR64PgwLpPMgPKHK3PqotLsTpMpw",
+      "result_jwt_data": {
+        "header": {
+          "typ": "JWT",
+          "alg": "GOST3410_2012_256"
+        },
+        "payload": {
+          "iss": "http://stub.ebs.iss",
+          "sub": "sub_value",
+          "client_id": "client_id_value",
+          "nbf": 1595249645,
+          "iat": 1595249644,
+          "exp": 1690946124
+        }
+      }
+    }
+  },
+  "is_generate_jwt": true
+}
